@@ -214,9 +214,17 @@
     <Content Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\Net.BizDac\Net.BizDac.csproj">
+      <Project>{0167e646-7596-4216-97a1-57a2c36b76f9}</Project>
+      <Name>Net.BizDac</Name>
+    </ProjectReference>
     <ProjectReference Include="..\Net.Common\Net.Common.csproj">
       <Project>{5cbfa03e-3760-4bf3-a523-2296d659940f}</Project>
       <Name>Net.Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Net.Framework\Net.Framework.csproj">
+      <Project>{15e73337-a8ab-4a0b-bac0-bb1ef021c054}</Project>
+      <Name>Net.Framework</Name>
     </ProjectReference>
   </ItemGroup>
   <PropertyGroup>

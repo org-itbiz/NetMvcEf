@@ -1,4 +1,6 @@
-﻿using System;
+﻿using Net.BizDac.Store;
+using Net.Framework.Models;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -8,12 +10,10 @@ namespace Net.Web.Controllers
 {
     public class HomeController : Controller
     {
-        //
-        // GET: /Home/
-
         public ActionResult Index()
         {
-            return View();
+            List<MemberT> members = new MemberBiz().getAllMembers();
+            return View(members);
         }
 
     }

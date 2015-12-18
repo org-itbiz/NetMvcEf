@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Net.Framework.Models;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -8,5 +9,9 @@ namespace Net.BizDac.Store
 {
     public class MemberBiz
     {
+        public List<MemberT> getAllMembers()
+        {
+            return new MemberDac().SelectAllMembers();
+        }
     }
 }
